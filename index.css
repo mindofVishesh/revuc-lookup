@@ -1,0 +1,65 @@
+.container1 {
+    background-color: black;
+    margin-top: 1rem;
+    padding: 20px;
+    font-size: 18px;
+    color: white;
+    border-radius: 10px;
+    height: 30rem;
+    z-index: 1;
+  }
+  
+  .container_text_1 {
+    display: flex;
+    justify-content: flex-end;
+    text-align: end;
+    white-space: pre-wrap;
+  }
+  
+  .container_text_2 {
+    display: flex;
+    justify-content: flex-start;
+    text-align: start;
+  }
+  
+  .container2 {
+    margin-top: 1rem;
+    font-size: 18px;
+    color: white;
+    border-radius: 10px;
+    height: 5rem;
+  }
+  
+  .container_left {
+    height: 5rem;
+    background-color: beige;
+  }
+  
+  .container_right {
+    background-color: gainsboro;
+  }
+  
+  #display-text {
+    color: green;
+  }
+  
+  #display-title-color {
+    font-size: 30px; /* Adjust font size as needed */
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  
+  /* Ensure hidden_container is a direct sibling or descendant of the other elements */
+  .hidden_container {
+    background-color: #C850C0;
+    height: 30rem;
+    width: 85%;
+    position: absolute; 
+    top: 5rem; 
+    z-index: -9999;
+     
+  }
+  button:hover + .hidden_container {
+    z-index: 5; 
+}

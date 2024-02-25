@@ -50,7 +50,7 @@ def main(user_session, user_input):
     asyncio.set_event_loop(loop)
 
     chain = user_session.get("chain")
-    res = loop.run_until_complete(chain.acall(user_input))
+    res = loop.run_until_complete(chain.ainvoke(user_input))
     answer = res["result"]
 
     source_documents = res["source_documents"]

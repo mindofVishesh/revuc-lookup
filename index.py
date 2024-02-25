@@ -1,5 +1,4 @@
 from taipy import Gui
-import next 
 import main_file
 
 title = "Query Pages"

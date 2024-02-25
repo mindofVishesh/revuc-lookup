@@ -1,0 +1,5 @@
+langchain
+chromadb
+docx2txt
+pypdf
+taipy
